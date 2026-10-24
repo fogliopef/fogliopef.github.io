@@ -120,7 +120,8 @@ footer nav{margin-top:8px}
 .filtri:has(#filtro-budget:checked) .sez:not(:has(.card[data-cat~="budget"])){display:none}
 .card h3.corto,.card .breve{display:none}
 .offer{align-items:stretch;text-align:left;justify-content:flex-start;min-height:0;display:flex;flex-direction:column}
-.offer > p:last-child{margin-top:auto}
+.offer > p:last-child{margin-top:auto;display:flex;flex-direction:column;gap:8px}
+.offer .btn{width:100%}
 .offer .price{text-align:center}
 .offer ul{margin:0;padding-left:1.1rem;text-align:left;width:100%}
 .offer li{margin:4px 0}
