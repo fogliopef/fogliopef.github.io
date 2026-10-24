@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://fogliopef.pages.dev/sitemap.xml
+Sitemap: https://fogliopef.github.io/sitemap.xml
