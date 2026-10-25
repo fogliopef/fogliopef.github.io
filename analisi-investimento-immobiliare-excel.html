@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foglio Excel per investimento immobiliare: cap rate e TIR</title>
+<meta name="description" content="Calcola rendimento, cap rate, cash-on-cash, VAN e TIR di un immobile in affitto in Excel senza macro. Pack Base 19 €, con budget e cashflow a 12 mesi.">
+<meta name="robots" content="index,follow">
+<meta name="google-site-verification" content="TpcNM11Sm5fjmmIHwMKbVIjjBnz3M1E5QjKitC8yFH4" />
+<meta name="theme-color" content="#0B5CAD">
+<link rel="canonical" href="https://fogliopef.github.io/analisi-investimento-immobiliare-excel">
+<link rel="alternate" hreflang="it" href="https://fogliopef.github.io/analisi-investimento-immobiliare-excel">
+<link rel="alternate" hreflang="es" href="https://fogliopef.github.io/es/calculadora-rentabilidad-alquiler">
+<link rel="alternate" hreflang="de" href="https://fogliopef.github.io/de/immobilien-kalkulation-excel">
+<link rel="alternate" hreflang="x-default" href="https://fogliopef.github.io/analisi-investimento-immobiliare-excel">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-512.png" type="image/png" sizes="512x512">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:title" content="Foglio Excel per investimento immobiliare: cap rate e TIR">
+<meta property="og:description" content="Calcola rendimento, cap rate, cash-on-cash, VAN e TIR di un immobile in affitto in Excel senza macro. Pack Base 19 €, con budget e cashflow a 12 mesi.">
+<meta property="og:url" content="https://fogliopef.github.io/analisi-investimento-immobiliare-excel">
+<meta property="og:image" content="https://fogliopef.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:site_name" content="FoglioPEF">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "FoglioPEF", "url": "https://fogliopef.github.io/", "email": "fogliopef.team@gmail.com", "logo": "https://fogliopef.github.io/favicon-512.png"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://fogliopef.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Analisi di un investimento immobiliare in Excel", "item": "https://fogliopef.github.io/analisi-investimento-immobiliare-excel"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Analisi di un investimento immobiliare in Excel", "description": "Calcola rendimento, cap rate, cash-on-cash, VAN e TIR di un immobile in affitto in Excel senza macro. Pack Base 19 €, con budget e cashflow a 12 mesi.", "brand": {"@type": "Brand", "name": "FoglioPEF"}, "offers": {"@type": "Offer", "price": "19", "priceCurrency": "EUR", "url": "https://fogliopef.gumroad.com/l/pack-base-it", "availability": "https://schema.org/InStock"}, "image": "https://fogliopef.github.io/media/pack-base-it.webp"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Come si calcola il rendimento di un immobile in affitto?", "acceptedAnswer": {"@type": "Answer", "text": "Rendimento lordo = affitto annuo / prezzo d'acquisto; rendimento netto = (affitto annuo meno spese, tasse e periodi sfitti) / costo totale dell'acquisto."}}, {"@type": "Question", "name": "Cos'è il cap rate?", "acceptedAnswer": {"@type": "Answer", "text": "Il reddito operativo netto annuo diviso per il prezzo: serve a confrontare immobili diversi senza considerare il mutuo."}}, {"@type": "Question", "name": "Cos'è il cash-on-cash?", "acceptedAnswer": {"@type": "Answer", "text": "Il flusso di cassa annuo dopo le rate del mutuo diviso per il capitale proprio investito."}}, {"@type": "Question", "name": "Quale modello mi serve?", "acceptedAnswer": {"@type": "Answer", "text": "Un immobile: Pack Base. Più immobili o affitto breve: Rental Analyzer. Ristrutturare e rivendere o rifinanziare: Value-Add. Costruire e vendere: Pack Pro."}}]}</script>
+</head>
+<body>
+<a class="skip" data-k="skip" href="#contenuto">Vai al contenuto</a>
+<header class="top"><div class="wrap"><div class="bar">
+  <a class="brand" data-page="index" href="/"><picture><source srcset="/logo-header.svg" type="image/svg+xml"><img src="/logo-header-80.png" srcset="/logo-header-80.png 1x, /logo-header-160.png 2x" alt="FoglioPEF" width="165" height="40"></picture></a>
+  <nav class="dnav" data-aria="aria_nav" aria-label="Principale"><ul><li><a data-page="index" data-k="nav_home" href="/">Home</a></li><li><a data-page="catalogo" data-k="nav_catalog" href="/catalogo">Catalogo</a></li><li><a data-page="su-misura" data-k="nav_custom" href="/su-misura">Su misura</a></li><li><a data-page="chi-siamo" data-k="nav_about" href="/chi-siamo">Chi siamo</a></li></ul></nav>
+  <nav class="lingue" data-aria="aria_lang" aria-label="Lingua"><a href="/analisi-investimento-immobiliare-excel" hreflang="it" lang="it" aria-current="true">Italiano</a><a href="/en" hreflang="en" lang="en">English</a><a href="/es/calculadora-rentabilidad-alquiler" hreflang="es" lang="es">Español</a><a href="/de/immobilien-kalkulation-excel" hreflang="de" lang="de">Deutsch</a></nav>
+  <details class="lingua-menu"><summary data-aria="aria_lang" aria-label="Lingua">IT ▾</summary><nav data-aria="aria_lang" aria-label="Lingua"><a href="/analisi-investimento-immobiliare-excel" hreflang="it" lang="it" aria-current="true">Italiano</a><a href="/en" hreflang="en" lang="en">English</a><a href="/es/calculadora-rentabilidad-alquiler" hreflang="es" lang="es">Español</a><a href="/de/immobilien-kalkulation-excel" hreflang="de" lang="de">Deutsch</a></nav></details>
+  <details class="menu">
+    <summary><span class="when-closed" data-k="menu_open">Menu</span><span class="when-open" data-k="menu_close">Chiudi</span></summary>
+    <nav data-aria="aria_menu" aria-label="Menu"><ul><li><a data-page="index" data-k="nav_home" href="/">Home</a></li><li><a data-page="catalogo" data-k="nav_catalog" href="/catalogo">Catalogo</a></li><li><a data-page="su-misura" data-k="nav_custom" href="/su-misura">Su misura</a></li><li><a data-page="chi-siamo" data-k="nav_about" href="/chi-siamo">Chi siamo</a></li></ul></nav>
+  </details>
+</div></div></header>
+<main id="contenuto" tabindex="-1">
+
+<div class="wrap">
+  <nav class="crumb" aria-label="Percorso"><ol><li><a href="/">Home</a></li><li>Analisi di un investimento immobiliare in Excel</li></ol></nav>
+  <h1>Analisi di un investimento immobiliare in Excel</h1>
+  <p class="lead">Per capire se un immobile in affitto rende servono pochi numeri: reddito netto, cap rate, cash-on-cash e, su più anni, VAN e TIR. Il Pack Base di FoglioPEF li calcola in un file Excel senza macro, insieme al budget mensile e al cashflow a 12 mesi. Prezzo: 19 €. Se vuoi confrontare più immobili o l&#x27;affitto breve, c&#x27;è il Rental Analyzer (29 €).</p>
+  <p class="price"><strong>19 €</strong></p>
+  <div class="buy"><a class="btn" href="https://fogliopef.gumroad.com/l/pack-base-it" target="_blank" rel="noopener noreferrer">Acquista · 19 €<span class="vh"> (si apre in una nuova scheda)</span></a><p class="vatnote">Con carta su Gumroad, ai clienti privati dell&#x27;UE Gumroad può aggiungere l&#x27;IVA del loro paese al pagamento.</p><p class="paynote">Pagamento sicuro su Gumroad</p></div>
+  <section><h2>Come si calcola il rendimento di un immobile in affitto</h2><p>Rendimento lordo = affitto annuo / prezzo d&#x27;acquisto. Rendimento netto = (affitto annuo meno spese, tasse e periodi sfitti) / costo totale dell&#x27;acquisto.</p></section><section><h2>Cap rate e cash-on-cash: le differenze</h2><p>Il cap rate è il reddito operativo netto annuo diviso per il prezzo: serve a confrontare immobili diversi senza considerare il mutuo. Il cash-on-cash è il flusso di cassa annuo dopo le rate del mutuo diviso per il capitale proprio investito. Con un mutuo i due numeri possono essere molto diversi.</p></section><section><h2>VAN e TIR spiegati semplici</h2><p>Su più anni il modello calcola il VAN e il TIR a partire dalle ipotesi che inserisci: canone, spese, sfitto, mutuo e prezzo. I risultati dipendono da quelle ipotesi.</p></section><section><h2>Cosa contiene il Pack Base</h2><p>Analisi di un immobile in affitto, budget mensile e cashflow a 12 mesi, in un file Excel senza macro.</p></section><section><h2>Esempio di cruscotto</h2><figure class="prodotto-figura"><img src="/media/pack-base-it.webp" width="700" height="490" loading="lazy" decoding="async" alt="Cruscotto di esempio del Pack Base per un immobile in affitto"></figure></section><section><h2>Quale modello scegliere</h2><ul class="guide"><li><a href="/analisi-investimento-immobiliare-excel">Pack Base (19 €)</a></li><li><a href="/rental-analyzer-affitti-excel">Rental Analyzer (29 €)</a></li><li><a href="/catalogo#value-add-pack-it">Value-Add (29 €)</a></li><li><a href="/sviluppo-immobiliare-excel">Pack Pro (69 €)</a></li></ul></section>
+  <section><h2>Cosa non fa</h2><p>I modelli sono strumenti di calcolo: non sono consulenza finanziaria, fiscale o legale.</p></section>
+  <section class="faq"><h2>Domande frequenti</h2><dl><dt>Come si calcola il rendimento di un immobile in affitto?</dt><dd>Rendimento lordo = affitto annuo / prezzo d&#x27;acquisto; rendimento netto = (affitto annuo meno spese, tasse e periodi sfitti) / costo totale dell&#x27;acquisto.</dd><dt>Cos&#x27;è il cap rate?</dt><dd>Il reddito operativo netto annuo diviso per il prezzo: serve a confrontare immobili diversi senza considerare il mutuo.</dd><dt>Cos&#x27;è il cash-on-cash?</dt><dd>Il flusso di cassa annuo dopo le rate del mutuo diviso per il capitale proprio investito.</dd><dt>Quale modello mi serve?</dt><dd>Un immobile: Pack Base. Più immobili o affitto breve: Rental Analyzer. Ristrutturare e rivendere o rifinanziare: Value-Add. Costruire e vendere: Pack Pro.</dd></dl></section>
+  <p><a href="/su-misura">Su misura</a></p>
+</div>
+
+</main>
+<footer>
+  <div class="wrap">
+    <p class="marca-footer"><img src="/logo-footer.svg" alt="FoglioPEF" width="433" height="108" loading="lazy" decoding="async"> · <span data-k="footer_lead">modelli Excel per budget mensile, mutuo, patrimonio, cashflow a 12 mesi e la scheda di un immobile, sviluppo, valorizzazione, affitti, condominio, cantiere, tesoreria e il DSCR, e ripartizione tra soci.</span></p>
+    <nav data-aria="aria_footer" aria-label="Piè di pagina">
+      <ul>
+        <li><a data-page="catalogo" data-k="nav_catalog" href="/catalogo">Catalogo</a></li><li><a data-page="su-misura" data-k="nav_custom" href="/su-misura">Su misura</a></li><li><a data-page="chi-siamo" data-k="nav_about" href="/chi-siamo">Chi siamo</a></li><li><a data-page="privacy" data-k="privacy" href="/privacy">Privacy</a></li><li><a data-page="note-legali" data-k="legal" href="/note-legali">Note legali</a></li>
+        <li><a href="https://incentiviperte.github.io/" target="_blank" rel="noopener noreferrer">IncentiviPerTe<span class="vh"> (si apre in una nuova scheda)</span></a></li>
+        <li><a href="https://www.linkedin.com/company/fogliopef" target="_blank" rel="noopener noreferrer">LinkedIn<span class="vh"> (si apre in una nuova scheda)</span></a></li>
+        <li><a href="mailto:fogliopef.team@gmail.com">fogliopef.team@gmail.com</a></li>
+      </ul>
+    </nav>
+    <p data-k="disclaimer">I modelli sono strumenti di calcolo: non sono consulenza finanziaria, fiscale o legale.</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -121,7 +121,7 @@ footer nav{margin-top:8px}
 .filtri:has(#filtro-gratuiti:checked) .sez:not(:has(.card[data-cat~="gratuiti"])),
 .filtri:has(#filtro-immobiliare:checked) .sez:not(:has(.card[data-cat~="immobiliare"])),
 .filtri:has(#filtro-budget:checked) .sez:not(:has(.card[data-cat~="budget"])){display:none}
-.card h3.corto,.card .breve{display:none}
+.card h3.corto{display:none}
 .offer{align-items:stretch;text-align:left;justify-content:flex-start;min-height:0;display:flex;flex-direction:column}
 .offer > p:last-child{margin-top:auto;display:flex;flex-direction:column;gap:8px}
 .offer .btn{width:100%}
@@ -129,11 +129,18 @@ footer nav{margin-top:8px}
 .offer ul{margin:0;padding-left:1.1rem;text-align:left;width:100%}
 .offer li{margin:4px 0}
 @media(max-width:700px){
- .filtri .card h3.lungo,.filtri .card .desc{display:none}
+ .filtri .card h3.lungo{display:none}
  .filtri .card h3.corto{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
- .filtri .card .breve{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;white-space:normal;color:var(--m);font-weight:400;font-size:15px}
+ .filtri .card .desc{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
  .filtri .card{min-width:0}
 }
+.faq dt{font-weight:800;margin-top:16px}
+.faq dd{margin:4px 0 0}
+.guide{margin:8px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+.guide a{font-weight:700}
+.prodotto-figura{margin:16px 0}
+.prodotto-figura img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--l);background:#fff}
+.hero .lead{font-size:1.05rem;max-width:40rem}
 .hero-grid{display:grid;gap:22px;align-items:center}
 @media(min-width:860px){.hero-grid{grid-template-columns:minmax(0,1.12fr) minmax(260px,.9fr);gap:32px}}
 .hero-art{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 14px 36px #04284a55}
