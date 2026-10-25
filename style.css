@@ -134,4 +134,18 @@ footer nav{margin-top:8px}
  .filtri .card .breve{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;white-space:normal;color:var(--m);font-weight:400;font-size:15px}
  .filtri .card{min-width:0}
 }
+.hero-grid{display:grid;gap:22px;align-items:center}
+@media(min-width:860px){.hero-grid{grid-template-columns:minmax(0,1.12fr) minmax(260px,.9fr);gap:32px}}
+.hero-art{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 14px 36px #04284a55}
+.section-head{display:flex;align-items:center;gap:14px;margin:28px 0 10px}
+.section-head h2{margin:0;flex:1;min-width:0}
+.ill{display:block;width:72px;height:72px;flex:0 0 auto}
+.card .ill{margin:0 0 10px}
+.card{overflow:hidden}
+.card-art{display:block;width:calc(100% + 36px);max-width:none;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center 28%;margin:-16px -18px 12px;background:#162030}
+.previews{margin:8px 0 22px}
+.previews figure{margin:0}
+.previews figcaption{color:var(--m);font-size:14px;margin-top:6px}
+.sheet{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--l);background:#fff}
+.offer .sheet{margin:0 0 4px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
