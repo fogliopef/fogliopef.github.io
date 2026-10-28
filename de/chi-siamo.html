@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Über FoglioPEF und wie wir unsere Modelle bauen</title>
-<meta name="description" content="FoglioPEF aus Arezzo (Italien): Excel-Modelle ohne Makros, Annahmen getrennt von Berechnungen, sichtbare Formeln und Plausibilitätsprüfungen.">
+<meta name="description" content="FoglioPEF: Excel-Modelle ohne Makros, Annahmen getrennt von Berechnungen, sichtbare Formeln und Plausibilitätsprüfungen.">
 <meta name="robots" content="index,follow">
 <meta name="google-site-verification" content="TpcNM11Sm5fjmmIHwMKbVIjjBnz3M1E5QjKitC8yFH4" />
 <meta name="theme-color" content="#0B5CAD">
@@ -23,7 +23,7 @@
 <link rel="icon" href="/favicon-512.png" type="image/png" sizes="512x512">
 <link rel="stylesheet" href="/style.css">
 <meta property="og:title" content="Über FoglioPEF und wie wir unsere Modelle bauen">
-<meta property="og:description" content="FoglioPEF aus Arezzo (Italien): Excel-Modelle ohne Makros, Annahmen getrennt von Berechnungen, sichtbare Formeln und Plausibilitätsprüfungen.">
+<meta property="og:description" content="FoglioPEF: Excel-Modelle ohne Makros, Annahmen getrennt von Berechnungen, sichtbare Formeln und Plausibilitätsprüfungen.">
 <meta property="og:url" content="https://fogliopef.github.io/de/chi-siamo">
 <meta property="og:image" content="https://fogliopef.github.io/og-de.png">
 <meta property="og:image:width" content="1200">
@@ -41,12 +41,12 @@
 <a class="skip" data-k="skip" href="#contenuto">Zum Inhalt</a>
 <header class="top"><div class="wrap"><div class="bar">
   <a class="brand" data-page="index" href="/de"><picture><source srcset="/logo-header.svg" type="image/svg+xml"><img src="/logo-header-80.png" srcset="/logo-header-80.png 1x, /logo-header-160.png 2x" alt="FoglioPEF" width="165" height="40"></picture></a>
-  <nav class="dnav" data-aria="aria_nav" aria-label="Hauptnavigation"><ul><li><a data-page="index" data-k="nav_home" href="/de">Start</a></li><li><a data-page="catalogo" data-k="nav_catalog" href="/de/catalogo">Katalog</a></li><li><a data-page="su-misura" data-k="nav_custom" href="/de/su-misura">Nach Maß</a></li><li><a data-page="chi-siamo" data-k="nav_about" href="/de/chi-siamo" aria-current="page">Über uns</a></li></ul></nav>
+  <nav class="dnav" data-aria="aria_nav" aria-label="Hauptnavigation"><ul><li><a data-page="index" data-k="nav_home" href="/de">Start</a></li><li><a data-page="catalogo" data-k="nav_catalog" href="/de/catalogo">Katalog</a></li><li><a data-page="su-misura" data-k="nav_custom" href="/de/su-misura">Nach Maß</a></li><li><a data-page="chi-siamo" data-k="nav_about" href="/de/chi-siamo" aria-current="page">Über uns</a></li><li><a data-page="contatti" data-k="nav_contact" href="/de/contatti">Kontakt</a></li></ul></nav>
   <nav class="lingue" data-aria="aria_lang" aria-label="Sprache"><a href="/chi-siamo" hreflang="it" lang="it">Italiano</a><a href="/en/chi-siamo" hreflang="en" lang="en">English</a><a href="/es/chi-siamo" hreflang="es" lang="es">Español</a><a href="/de/chi-siamo" hreflang="de" lang="de" aria-current="true">Deutsch</a></nav>
   <details class="lingua-menu"><summary data-aria="aria_lang" aria-label="Sprache">DE ▾</summary><nav data-aria="aria_lang" aria-label="Sprache"><a href="/chi-siamo" hreflang="it" lang="it">Italiano</a><a href="/en/chi-siamo" hreflang="en" lang="en">English</a><a href="/es/chi-siamo" hreflang="es" lang="es">Español</a><a href="/de/chi-siamo" hreflang="de" lang="de" aria-current="true">Deutsch</a></nav></details>
   <details class="menu">
     <summary><span class="when-closed" data-k="menu_open">Menü</span><span class="when-open" data-k="menu_close">Schließen</span></summary>
-    <nav data-aria="aria_menu" aria-label="Menü"><ul><li><a data-page="index" data-k="nav_home" href="/de">Start</a></li><li><a data-page="catalogo" data-k="nav_catalog" href="/de/catalogo">Katalog</a></li><li><a data-page="su-misura" data-k="nav_custom" href="/de/su-misura">Nach Maß</a></li><li><a data-page="chi-siamo" data-k="nav_about" href="/de/chi-siamo" aria-current="page">Über uns</a></li></ul></nav>
+    <nav data-aria="aria_menu" aria-label="Menü"><ul><li><a data-page="index" data-k="nav_home" href="/de">Start</a></li><li><a data-page="catalogo" data-k="nav_catalog" href="/de/catalogo">Katalog</a></li><li><a data-page="su-misura" data-k="nav_custom" href="/de/su-misura">Nach Maß</a></li><li><a data-page="chi-siamo" data-k="nav_about" href="/de/chi-siamo" aria-current="page">Über uns</a></li><li><a data-page="contatti" data-k="nav_contact" href="/de/contatti">Kontakt</a></li></ul></nav>
   </details>
 </div></div></header>
 <main id="contenuto" tabindex="-1">
@@ -54,8 +54,12 @@
 <div class="wrap">
   <nav class="crumb" aria-label="Pfad"><ol><li><a href="/de">Start</a></li><li>Über uns und unsere Arbeitsweise</li></ol></nav>
   <h1>Über uns und unsere Arbeitsweise</h1>
-  <p>FoglioPEF erstellt Excel-Modelle für alle, die die Zahlen einer Immobilie, eines Vorhabens oder der Kasse eines KMU rechnen müssen. Jedes Modell folgt denselben Regeln: Eingabezellen getrennt von den Berechnungen, sichtbare Formeln, keine Makros, eine Übersicht mit Plausibilitätsprüfungen und eine Anleitung. Die Modelle sind Rechenwerkzeuge und ersetzen keine Finanz-, Steuer- oder Rechtsberatung.</p>
+  <p>FoglioPEF ist ein kleines Projekt und veröffentlicht gebrauchsfertige Excel-Modelle für private Finanzen, Immobilien und kleine Unternehmen.</p>
+  <p>Hinter FoglioPEF steht ein Team von Fachexperten mit langjähriger Berufserfahrung.</p>
   <p>Die Excel-Modelle im Katalog decken ab: Monatsbudget, Nettovermögen, 12-Monats-Cashflow, Wohnbauprojekte, Kauf mit Sanierung und Mietanalyse. Die Mappen ordnen Berechnungen und vergleichen Szenarien. Ein Modell nach Maß fragen Sie auf der Seite Nach Maß an.</p>
+  <h2>So arbeiten wir</h2>
+  <p>FoglioPEF erstellt Excel-Modelle für alle, die die Zahlen einer Immobilie, eines Vorhabens oder der Kasse eines KMU rechnen müssen. Jedes Modell folgt denselben Regeln: Eingabezellen getrennt von den Berechnungen, sichtbare Formeln, keine Makros, eine Übersicht mit Plausibilitätsprüfungen und eine Anleitung. Die Modelle sind Rechenwerkzeuge und ersetzen keine Finanz-, Steuer- oder Rechtsberatung.</p>
+  <p>Wir prüfen jedes Modell vor der Veröffentlichung. Die Datei enthält eine Anleitung. Wenn wir eine neue Version vorbereiten, veröffentlichen wir die geprüfte Version im Katalog.</p>
   <p><a class="btn" href="/de/catalogo">Katalog ansehen</a></p>
   <p><a href="/de/su-misura">Nach Maß</a></p>
   <section class="fpef">
@@ -63,6 +67,7 @@
     <p><a href="https://incentiviperte.github.io/" target="_blank" rel="noopener noreferrer">IncentiviPerTe<span class="vh"> (öffnet sich in einem neuen Tab)</span></a></p>
   </section>
   <p>Kontakt: <a href="mailto:fogliopef.team@gmail.com">fogliopef.team@gmail.com</a>.</p>
+  <p>Das Team FoglioPEF</p>
 </div>
 
 </main>
@@ -71,7 +76,7 @@
     <p class="marca-footer"><img src="/logo-footer.svg" alt="FoglioPEF" width="433" height="108" loading="lazy" decoding="async"> · <span data-k="footer_lead">Excel-Modelle für Monatsbudget, Nettovermögen, 12-Monats-Cashflow, Wohnbauprojekte, Kauf mit Sanierung und Mietanalyse.</span></p>
     <nav data-aria="aria_footer" aria-label="Fußzeile">
       <ul>
-        <li><a data-page="catalogo" data-k="nav_catalog" href="/de/catalogo">Katalog</a></li><li><a data-page="su-misura" data-k="nav_custom" href="/de/su-misura">Nach Maß</a></li><li><a data-page="chi-siamo" data-k="nav_about" href="/de/chi-siamo">Über uns</a></li><li><a data-page="privacy" data-k="privacy" href="/de/privacy">Datenschutz</a></li><li><a data-page="note-legali" data-k="legal" href="/de/note-legali">Rechtliche Hinweise</a></li>
+        <li><a data-page="catalogo" data-k="nav_catalog" href="/de/catalogo">Katalog</a></li><li><a data-page="su-misura" data-k="nav_custom" href="/de/su-misura">Nach Maß</a></li><li><a data-page="chi-siamo" data-k="nav_about" href="/de/chi-siamo">Über uns</a></li><li><a data-page="contatti" data-k="nav_contact" href="/de/contatti">Kontakt</a></li><li><a data-page="cookie" data-k="cookie" href="/de/cookie">Cookies</a></li><li><a data-page="disclaimer" data-k="nav_disclaimer" href="/de/disclaimer">Hinweis</a></li><li><a data-page="termini" data-k="nav_terms" href="/de/termini">Bedingungen</a></li><li><a data-page="privacy" data-k="privacy" href="/de/privacy">Datenschutz</a></li><li><a data-page="note-legali" data-k="legal" href="/de/note-legali">Rechtliche Hinweise</a></li>
         <li><a href="https://incentiviperte.github.io/" target="_blank" rel="noopener noreferrer">IncentiviPerTe<span class="vh"> (öffnet sich in einem neuen Tab)</span></a></li>
         <li><a href="https://www.linkedin.com/company/fogliopef" target="_blank" rel="noopener noreferrer">LinkedIn<span class="vh"> (öffnet sich in einem neuen Tab)</span></a></li>
         <li><a href="mailto:fogliopef.team@gmail.com">fogliopef.team@gmail.com</a></li>
