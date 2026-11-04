@@ -109,6 +109,8 @@ footer nav{margin-top:8px}
 .shot{display:block;width:100%;height:148px;object-fit:cover;object-position:left top;border-radius:10px;border:1px solid var(--l);background:#fff}
 .price.free strong{font-size:1.25rem}
 .paynote{color:var(--m);font-size:13px;margin:6px 0 0}
+.etsy{margin:4px 0 16px;font-size:14px;line-height:1.4;font-weight:400}
+.etsy a{color:var(--m);font-weight:600}
 .filtri{position:relative}
 .chipbar{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
 .chip{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border:1px solid #5c6b82;border-radius:999px;background:#fff;font-weight:700;cursor:pointer}
