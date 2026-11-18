@@ -158,3 +158,6 @@ footer nav{margin-top:8px}
 .sheet{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--l);background:#fff}
 .offer .sheet{margin:0 0 4px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+main p{text-align:justify;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto}
+.card p,.offer p,.picked p,p.price,p.fine,p.paynote,p.etsy,p.vatnote{text-align:left;-webkit-hyphens:manual;-moz-hyphens:manual;-ms-hyphens:manual;hyphens:manual}
+@media(max-width:599px){main p{text-align:left;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto}}
