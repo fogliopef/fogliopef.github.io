@@ -151,7 +151,7 @@ footer nav{margin-top:8px}
 .ill{display:block;width:72px;height:72px;flex:0 0 auto}
 .card .ill{margin:0 0 10px}
 .card{overflow:hidden}
-.card-art{display:block;width:calc(100% + 36px);max-width:none;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center 28%;margin:-16px -18px 12px;background:#162030}
+.card-art{display:block;width:calc(100% + 36px);max-width:none;height:auto;aspect-ratio:16/10;object-fit:contain;object-position:left center;margin:-16px -18px 12px;background:#fff}
 .previews{margin:8px 0 22px}
 .previews figure{margin:0}
 .previews figcaption{color:var(--m);font-size:14px;margin-top:6px}
